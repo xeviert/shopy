@@ -7,10 +7,17 @@ export default class Cartbar extends Component {
     static contextType = AppContext
 
     render() {
+        let products = this.context.product
+        
         return (
             <div id='sidebar'>
                 <div>
-                    {this.context.product}
+                    {products.map(product => (
+                    <p>
+                        {product.name}
+                        ${product.price}
+                    </p>
+                    ))}
                 </div>
                 <button id='checkout-btn'>
                     Checkout

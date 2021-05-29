@@ -11,5 +11,6 @@
 }
 
 #checkout-btn {
-    margin-top: calc(90vh);
+    /* margin-top: calc(50vh); */
+    position: absolute;
 }

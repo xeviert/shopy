@@ -14,25 +14,14 @@ export default class AppProvider extends Component {
         }
     }
 
-    // componentDidMount() {
-    //     this.setProducts()
-    // }
-
-    // setProducts = () => {
-    //     this.setState({
-    //         products
-    //     })
-    // }
-
     addProduct = (product) => {
-        this.setState({
-            product
-        })
+        this.setState({product: [...this.state.product, product]})
     }
 
     render() {
         const value = {
             addProduct: this.addProduct,
+            product: this.state.product,
         }
 
         return (
