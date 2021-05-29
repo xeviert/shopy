@@ -1,0 +1,17 @@
+#all-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    border-style: solid;
+    border-color: black;
+    width: 21vh;
+    margin: 1rem;
+}
+
+.item-pic {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+}

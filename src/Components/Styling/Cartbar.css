@@ -1,0 +1,15 @@
+#sidebar {
+    margin: 0;
+    padding: 0;
+    width: 30vh;
+    background-color: #cfcfcf;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    top: 0;
+    right: 0;
+}
+
+#checkout-btn {
+    margin-top: calc(90vh);
+}
