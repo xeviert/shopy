@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {AppContext} from '../AppContext'
+import { AppContext } from '../AppContext'
 
 import './Styling/Cartbar.css'
 
@@ -8,20 +8,30 @@ export default class Cartbar extends Component {
 
     render() {
         let products = this.context.product
-        
+        console.log(products.price)
+
         return (
             <div id='sidebar'>
                 <div>
                     {products.map(product => (
-                    <p>
-                        {product.name}
-                        ${product.price}
+                    <p className='cart'>
+                        <span>{product.name}</span>
+                        <span>${product.price}</span>
                     </p>
                     ))}
                 </div>
-                <button id='checkout-btn'>
-                    Checkout
-                </button>
+                <div>
+                    <button id='checkout-btn'
+                    onClick={() => this.context.checkout()}
+                    >
+                        Checkout
+                    </button>
+                    <div role='alert'
+                        onClick={() => this.context.handleClose()}
+                    >
+                        {/* {products.price.reduce((a, b) => a + b, 0)} */}
+                    </div>
+                </div>
             </div>
         )
     }

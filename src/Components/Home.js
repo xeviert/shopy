@@ -12,10 +12,9 @@ export default class Home extends Component {
     render() {
 
         return (
-            <div>
                 <div className='page-body'>  
-                <div id='all-items'>
                     <Cartbar />
+                <div id='all-items'>
                     {products.map(product => (
                         <Item
                             key={product.id}
@@ -25,7 +24,6 @@ export default class Home extends Component {
                 </div>
                 
                 </div>
-            </div>
         )
     }
 }

@@ -19,7 +19,7 @@ export const products = [
     },
     {
         id: 4,
-        name: "Lauquen Artes Mineral Water",
+        name: "Lauquen Artes",
         price: 6,
         photo: "/images/lauquen.png"
     },

@@ -1,0 +1,15 @@
+.item {
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    width: 23vh;
+    margin: 1rem;
+    text-align: center;
+    padding: .7vh;
+}
+
+.item-pic {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+}
